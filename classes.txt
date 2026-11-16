@@ -1,0 +1,15 @@
+gancho_pequeno
+afastador_hohmann_8x236
+afastador_hohmann_mini_2x8
+afastador_mini_2x16
+retrator_senn_mueller
+pinca_reducao_dentes_14cm
+pinca_reducao_dentes_16cm
+pinca_verbrugge
+pinca_reducao_pontas_152mm
+retrator_weitlaner
+pinca_reducao_pontas_20cm
+modelador_pequeno
+descolador_williger
+retrator_farabeuf
+instrumento_desconhecido

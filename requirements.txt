@@ -1,0 +1,6 @@
+# Para usar o prototipo no PC (captura, anotacao, deteccao e avaliacao), sem PyTorch:
+opencv-python
+numpy
+onnxruntime
+# Para treinar (no Google Colab), instale tambem:
+# ultralytics==8.4.214

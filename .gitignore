@@ -1,0 +1,21 @@
+# ambiente e cache do Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+
+# fotos e rotulos (grandes demais para o GitHub; publicar a parte, se for o caso)
+fotos_treino/
+fotos_treino_leve/
+fotos_teste/
+lote*/
+*.zip
+
+# resultados gerados
+resultado_teste/
+runs/
+
+# pesos do modelo: publicar como arquivo anexo de uma Release, nao no codigo
+*.pt
+*.onnx

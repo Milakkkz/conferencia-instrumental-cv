@@ -1,0 +1,161 @@
+﻿foto        ;situacao                                      ;esperado     ;sistema      ;veredito ;diagnostico ;faltam_real   ;faltam_sist   ;sobram_real ;sobram_sist ;desc_sist
+teste_0001  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0002  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0003  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0004  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0005  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0006  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0007  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0008  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0009  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0010  ;completa                                      ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0011  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0012  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0013  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0014  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0015  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0016  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0017  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0018  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0019  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0020  ;completa + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0021  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;0 1         ;0 1         ;0
+teste_0022  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;2 3         ;2 3         ;0
+teste_0023  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;4 4         ;4 4         ;0
+teste_0024  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;5 5         ;5 5         ;0
+teste_0025  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;6 6         ;6 6         ;0
+teste_0026  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;7 8         ;7 8         ;0
+teste_0027  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;9 10        ;9 10        ;0
+teste_0028  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;11 11       ;11 11       ;0
+teste_0029  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;0 12        ;0 12        ;0
+teste_0030  ;com_mais                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;13 13       ;13 13       ;0
+teste_0031  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;4 10        ;4 10        ;1
+teste_0032  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;1 9         ;1 9         ;1
+teste_0033  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;4 6         ;4 6         ;1
+teste_0034  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;0 13        ;0 13        ;1
+teste_0035  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;5 11        ;5 11        ;1
+teste_0036  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;8 12        ;8 12        ;1
+teste_0037  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;3 7         ;3 7         ;1
+teste_0038  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;5 13        ;5 13        ;1
+teste_0039  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;2 6         ;2 6         ;1
+teste_0040  ;com_mais + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;11 12       ;11 12       ;2
+teste_0041  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 1 2         ;0 1 2         ;            ;            ;0
+teste_0042  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;3 4 4         ;3 4 4         ;            ;            ;0
+teste_0043  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;5 5 6         ;5 5 6         ;            ;            ;0
+teste_0044  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;6 7 8         ;6 7 8         ;            ;            ;0
+teste_0045  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;9 10 11       ;9 10 11       ;            ;            ;0
+teste_0046  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;11 12 13      ;11 12 13      ;            ;            ;0
+teste_0047  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 10 13       ;1 10 13       ;            ;            ;0
+teste_0048  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 6 9         ;2 6 9         ;            ;            ;0
+teste_0049  ;faltando                                      ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;3 5 8         ;3 5 8         ;            ;            ;0
+teste_0050  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 13 13       ;0 13 13       ;4 12        ;4 12        ;0
+teste_0051  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 11 12 13    ;0 11 12 13    ;            ;            ;1
+teste_0052  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 4 4 6       ;1 4 4 6       ;            ;            ;1
+teste_0053  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 8 9 10      ;2 8 9 10      ;            ;            ;1
+teste_0054  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 5 6 11      ;4 5 6 11      ;            ;            ;1
+teste_0055  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 6 7 13      ;0 6 7 13      ;            ;            ;1
+teste_0056  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;3 4 5 10      ;3 4 5 10      ;            ;            ;1
+teste_0057  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 6 7 10      ;1 6 7 10      ;            ;            ;1
+teste_0058  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 4 8 9       ;2 4 8 9       ;            ;            ;1
+teste_0059  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;5 5 6 6       ;5 5 6 6       ;            ;            ;1
+teste_0060  ;faltando + desconhecido                       ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;11 11 13 13   ;11 11 13 13   ;            ;            ;1
+teste_0061  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 3           ;2 3           ;4 11        ;4 11        ;0
+teste_0062  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 11          ;1 11          ;0 10        ;0 10        ;0
+teste_0063  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;3 4 6         ;3 4 6         ;2 5         ;2 5         ;0
+teste_0064  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;7 10 13       ;7 10 13       ;6 9         ;6 9         ;0
+teste_0065  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;3 4 5 12      ;3 4 5 12      ;1 11        ;1 11        ;0
+teste_0066  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 1 2 5 11    ;0 1 2 5 11    ;7 8         ;7 8         ;0
+teste_0067  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 10 13 13    ;4 10 13 13    ;6 12        ;6 12        ;0
+teste_0068  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 7 9 11      ;1 7 9 11      ;13 13       ;13 13       ;0
+teste_0069  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 5 6 8 13    ;0 5 6 8 13    ;3 4         ;3 4         ;0
+teste_0070  ;faltando_com_mais                             ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 3 4 12      ;2 3 4 12      ;5           ;5           ;0
+teste_0071  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 7 9 10      ;2 7 9 10      ;1 5 6       ;1 5 6       ;1
+teste_0072  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 6 7 13      ;1 6 7 13      ;5 8 10      ;5 8 10      ;1
+teste_0073  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;5 6 9         ;5 6 9         ;4 11        ;4 11        ;1
+teste_0074  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 7 10 12 13  ;4 7 10 12 13  ;2 3 5       ;2 3 5       ;1
+teste_0075  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 1 3         ;0 1 3         ;6 11        ;6 11        ;1
+teste_0076  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;8 11 11       ;8 11 11       ;5 7 9       ;5 7 9       ;1
+teste_0077  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;13 13         ;13 13         ;4 12        ;4 12        ;1
+teste_0078  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;6 8 10 12     ;6 8 10 12     ;0 5 13      ;0 5 13      ;1
+teste_0079  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 5 6 6       ;4 5 6 6       ;1 10 13     ;1 10 13     ;1
+teste_0080  ;faltando_com_mais + desconhecido              ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;5 8 9 13      ;5 8 9 13      ;2 4 12      ;2 4 12      ;1
+teste_0081  ;completa + sobreposto                         ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0082  ;completa + sobreposto                         ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0083  ;completa + sobreposto                         ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0084  ;completa + sobreposto                         ;CONFORME     ;NAO_CONFORME ;ERRO     ;ERRO        ;              ;              ;            ;4           ;0
+teste_0085  ;completa + sobreposto                         ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0086  ;completa + sobreposto                         ;CONFORME     ;NAO_CONFORME ;ERRO     ;ERRO        ;              ;              ;            ;0           ;0
+teste_0087  ;completa + sobreposto                         ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0088  ;completa + sobreposto                         ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0089  ;completa + sobreposto                         ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0090  ;completa + sobreposto                         ;CONFORME     ;CONFORME     ;ok       ;ok          ;              ;              ;            ;            ;0
+teste_0091  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0092  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0093  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0094  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0095  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0096  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ERRO        ;              ;              ;            ;13          ;1
+teste_0097  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0098  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0099  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0100  ;completa + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;            ;            ;1
+teste_0101  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ERRO        ;              ;              ;0 1         ;0 1 12      ;0
+teste_0102  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;2 3         ;2 3         ;0
+teste_0103  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;4 4         ;4 4         ;0
+teste_0104  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ERRO        ;              ;              ;5 5         ;1 5 5       ;0
+teste_0105  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;6 6         ;6 6         ;0
+teste_0106  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;7 8         ;7 8         ;0
+teste_0107  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;9 10        ;9 10        ;0
+teste_0108  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;11 11       ;11 11       ;0
+teste_0109  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;8 12        ;8 12        ;0
+teste_0110  ;com_mais + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ERRO        ;              ;5             ;8 12 13 13  ;8 12 13 13  ;1
+teste_0111  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;6 8 11 12   ;6 8 11 12   ;1
+teste_0112  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;8 12        ;8 12        ;1
+teste_0113  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ERRO        ;              ;4             ;6 10        ;6 10        ;1
+teste_0114  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;4 7         ;4 7         ;1
+teste_0115  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;9 13        ;9 13        ;1
+teste_0116  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;3 5         ;3 5         ;1
+teste_0117  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;2 4 11 13   ;2 4 11 13   ;1
+teste_0118  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;1 5         ;1 5         ;1
+teste_0119  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;0 4         ;0 4         ;1
+teste_0120  ;com_mais + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;              ;              ;3 12        ;3 12        ;1
+teste_0121  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 1 2 3       ;0 1 2 3       ;            ;            ;0
+teste_0122  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 4 5 5       ;4 4 5 5       ;            ;            ;0
+teste_0123  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;6 6 7 8       ;6 6 7 8       ;            ;            ;0
+teste_0124  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;9 10 11 11    ;9 10 11 11    ;            ;            ;0
+teste_0125  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 12 13 13    ;1 12 13 13    ;            ;            ;0
+teste_0126  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;5 6 7 8       ;5 6 7 8       ;            ;            ;0
+teste_0127  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 6 11 13     ;4 6 11 13     ;            ;            ;0
+teste_0128  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 3 5 12      ;0 3 5 12      ;            ;            ;0
+teste_0129  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 7 9 13      ;2 7 9 13      ;            ;            ;0
+teste_0130  ;faltando + sobreposto                         ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 3 4 12      ;0 3 4 12      ;            ;            ;0
+teste_0131  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;6 7 9 10      ;6 7 9 10      ;            ;            ;1
+teste_0132  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 2 4 5 13    ;1 2 4 5 13    ;            ;            ;1
+teste_0133  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;3 11 12       ;3 11 12       ;            ;            ;1
+teste_0134  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 3 6 11 12   ;1 3 6 11 12   ;            ;            ;1
+teste_0135  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;5 5 6 9       ;5 5 6 9       ;            ;            ;1
+teste_0136  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 3 4 10      ;0 3 4 10      ;            ;            ;1
+teste_0137  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 7 8 11      ;1 7 8 11      ;            ;            ;1
+teste_0138  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 5 6         ;4 5 6         ;            ;            ;1
+teste_0139  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 4 6         ;2 4 6         ;            ;            ;1
+teste_0140  ;faltando + desconhecido + sobreposto          ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 8 10 11     ;1 8 10 11     ;            ;            ;1
+teste_0141  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ERRO        ;2 6 7 11 13   ;2 6 7 10 11 13;1 12        ;1 12        ;0
+teste_0142  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 4 6 8       ;1 4 6 8       ;0 3         ;0 3         ;0
+teste_0143  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 3 5 9 11 13 ;2 3 5 9 11 13 ;7 10        ;7 10        ;0
+teste_0144  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 4           ;1 4           ;6 11        ;6 11        ;0
+teste_0145  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;3 6           ;3 6           ;2 5         ;2 5         ;0
+teste_0146  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 7           ;4 7           ;6 13        ;6 13        ;0
+teste_0147  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;8 9           ;8 9           ;4 5         ;4 5         ;0
+teste_0148  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 6 11        ;1 6 11        ;4 13        ;4 13        ;0
+teste_0149  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;7 10          ;7 10          ;8 11        ;8 11        ;0
+teste_0150  ;faltando_com_mais + sobreposto                ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;5 6           ;5 6           ;9           ;9           ;0
+teste_0151  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;9 10 11       ;9 10 11       ;2 5         ;2 5         ;1
+teste_0152  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 7 8         ;1 7 8         ;4 11        ;4 11        ;1
+teste_0153  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;2 5 7 11      ;2 5 7 11      ;6 8         ;6 8         ;1
+teste_0154  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;3 6 9 12      ;3 6 9 12      ;10 13       ;10 13       ;1
+teste_0155  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;0 2 5 11      ;0 2 5 11      ;6 7         ;6 7         ;1
+teste_0156  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;4 7 8 11 13   ;4 7 8 11 13   ;5 9         ;5 9         ;1
+teste_0157  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;1 5 10        ;1 5 10        ;11 12       ;11 12       ;1
+teste_0158  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ERRO        ;3 6           ;3 6           ;0 13        ;0 13        ;0
+teste_0159  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ERRO        ;1 2 8         ;1 2 8         ;3 4         ;3 4 6       ;2
+teste_0160  ;faltando_com_mais + desconhecido + sobreposto ;NAO_CONFORME ;NAO_CONFORME ;ok       ;ok          ;9 10 13       ;9 10 13       ;1           ;1           ;1

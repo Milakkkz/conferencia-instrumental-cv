@@ -1,0 +1,161 @@
+﻿foto            ;faltando ;sobrando ;desconhecido ;sobreposto ;quais_faltam  ;quais_sobram
+teste_0001.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0002.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0003.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0004.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0005.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0006.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0007.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0008.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0009.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0010.jpg  ;nao      ;nao      ;nao          ;nao        ;              ;
+teste_0011.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0012.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0013.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0014.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0015.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0016.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0017.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0018.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0019.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0020.jpg  ;nao      ;nao      ;sim          ;nao        ;              ;
+teste_0021.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;0 1
+teste_0022.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;2 3
+teste_0023.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;4 4
+teste_0024.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;5 5
+teste_0025.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;6 6
+teste_0026.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;7 8
+teste_0027.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;9 10
+teste_0028.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;11 11
+teste_0029.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;0 12
+teste_0030.jpg  ;nao      ;sim      ;nao          ;nao        ;              ;13 13
+teste_0031.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;4 10
+teste_0032.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;1 9
+teste_0033.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;4 6
+teste_0034.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;0 13
+teste_0035.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;5 11
+teste_0036.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;8 12
+teste_0037.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;3 7
+teste_0038.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;5 13
+teste_0039.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;2 6
+teste_0040.jpg  ;nao      ;sim      ;sim          ;nao        ;              ;11 12
+teste_0041.jpg  ;sim      ;nao      ;nao          ;nao        ;0 1 2         ;
+teste_0042.jpg  ;sim      ;nao      ;nao          ;nao        ;3 4 4         ;
+teste_0043.jpg  ;sim      ;nao      ;nao          ;nao        ;5 5 6         ;
+teste_0044.jpg  ;sim      ;nao      ;nao          ;nao        ;6 7 8         ;
+teste_0045.jpg  ;sim      ;nao      ;nao          ;nao        ;9 10 11       ;
+teste_0046.jpg  ;sim      ;nao      ;nao          ;nao        ;11 12 13      ;
+teste_0047.jpg  ;sim      ;nao      ;nao          ;nao        ;1 10 13       ;
+teste_0048.jpg  ;sim      ;nao      ;nao          ;nao        ;2 6 9         ;
+teste_0049.jpg  ;sim      ;nao      ;nao          ;nao        ;3 5 8         ;
+teste_0050.jpg  ;sim      ;sim      ;nao          ;nao        ;0 13 13       ;4 12
+teste_0051.jpg  ;sim      ;nao      ;sim          ;nao        ;0 11 12 13    ;
+teste_0052.jpg  ;sim      ;nao      ;sim          ;nao        ;1 4 4 6       ;
+teste_0053.jpg  ;sim      ;nao      ;sim          ;nao        ;2 8 9 10      ;
+teste_0054.jpg  ;sim      ;nao      ;sim          ;nao        ;4 5 6 11      ;
+teste_0055.jpg  ;sim      ;nao      ;sim          ;nao        ;0 6 7 13      ;
+teste_0056.jpg  ;sim      ;nao      ;sim          ;nao        ;3 4 5 10      ;
+teste_0057.jpg  ;sim      ;nao      ;sim          ;nao        ;1 6 7 10      ;
+teste_0058.jpg  ;sim      ;nao      ;sim          ;nao        ;2 4 8 9       ;
+teste_0059.jpg  ;sim      ;nao      ;sim          ;nao        ;5 5 6 6       ;
+teste_0060.jpg  ;sim      ;nao      ;sim          ;nao        ;11 11 13 13   ;
+teste_0061.jpg  ;sim      ;sim      ;nao          ;nao        ;2 3           ;4 11
+teste_0062.jpg  ;sim      ;sim      ;nao          ;nao        ;1 11          ;0 10
+teste_0063.jpg  ;sim      ;sim      ;nao          ;nao        ;3 4 6         ;2 5
+teste_0064.jpg  ;sim      ;sim      ;nao          ;nao        ;7 10 13       ;6 9
+teste_0065.jpg  ;sim      ;sim      ;nao          ;nao        ;3 4 5 12      ;1 11
+teste_0066.jpg  ;sim      ;sim      ;nao          ;nao        ;0 1 2 5 11    ;7 8
+teste_0067.jpg  ;sim      ;sim      ;nao          ;nao        ;4 10 13 13    ;6 12
+teste_0068.jpg  ;sim      ;sim      ;nao          ;nao        ;1 7 9 11      ;13 13
+teste_0069.jpg  ;sim      ;sim      ;nao          ;nao        ;0 5 6 8 13    ;3 4
+teste_0070.jpg  ;sim      ;sim      ;nao          ;nao        ;2 3 4 12      ;5
+teste_0071.jpg  ;sim      ;sim      ;sim          ;nao        ;2 7 9 10      ;1 5 6
+teste_0072.jpg  ;sim      ;sim      ;sim          ;nao        ;1 6 7 13      ;5 8 10
+teste_0073.jpg  ;sim      ;sim      ;sim          ;nao        ;5 6 9         ;4 11
+teste_0074.jpg  ;sim      ;sim      ;sim          ;nao        ;4 7 10 12 13  ;2 3 5
+teste_0075.jpg  ;sim      ;sim      ;sim          ;nao        ;0 1 3         ;6 11
+teste_0076.jpg  ;sim      ;sim      ;sim          ;nao        ;8 11 11       ;5 7 9
+teste_0077.jpg  ;sim      ;sim      ;sim          ;nao        ;13 13         ;4 12
+teste_0078.jpg  ;sim      ;sim      ;sim          ;nao        ;6 8 10 12     ;0 5 13
+teste_0079.jpg  ;sim      ;sim      ;sim          ;nao        ;4 5 6 6       ;1 10 13
+teste_0080.jpg  ;sim      ;sim      ;sim          ;nao        ;5 8 9 13      ;2 4 12
+teste_0081.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0082.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0083.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0084.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0085.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0086.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0087.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0088.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0089.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0090.jpg  ;nao      ;nao      ;nao          ;sim        ;              ;
+teste_0091.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0092.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0093.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0094.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0095.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0096.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0097.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0098.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0099.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0100.jpg  ;nao      ;nao      ;sim          ;sim        ;              ;
+teste_0101.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;0 1
+teste_0102.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;2 3
+teste_0103.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;4 4
+teste_0104.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;5 5
+teste_0105.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;6 6
+teste_0106.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;7 8
+teste_0107.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;9 10
+teste_0108.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;11 11
+teste_0109.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;8 12
+teste_0110.jpg  ;nao      ;sim      ;nao          ;sim        ;              ;8 12 13 13
+teste_0111.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;6 8 11 12
+teste_0112.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;8 12
+teste_0113.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;6 10
+teste_0114.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;4 7
+teste_0115.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;9 13
+teste_0116.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;3 5
+teste_0117.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;2 4 11 13
+teste_0118.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;1 5
+teste_0119.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;0 4
+teste_0120.jpg  ;nao      ;sim      ;sim          ;sim        ;              ;3 12
+teste_0121.jpg  ;sim      ;nao      ;nao          ;sim        ;0 1 2 3       ;
+teste_0122.jpg  ;sim      ;nao      ;nao          ;sim        ;4 4 5 5       ;
+teste_0123.jpg  ;sim      ;nao      ;nao          ;sim        ;6 6 7 8       ;
+teste_0124.jpg  ;sim      ;nao      ;nao          ;sim        ;9 10 11 11    ;
+teste_0125.jpg  ;sim      ;nao      ;nao          ;sim        ;1 12 13 13    ;
+teste_0126.jpg  ;sim      ;nao      ;nao          ;sim        ;5 6 7 8       ;
+teste_0127.jpg  ;sim      ;nao      ;nao          ;sim        ;4 6 11 13     ;
+teste_0128.jpg  ;sim      ;nao      ;nao          ;sim        ;0 3 5 12      ;
+teste_0129.jpg  ;sim      ;nao      ;nao          ;sim        ;2 7 9 13      ;
+teste_0130.jpg  ;sim      ;nao      ;nao          ;sim        ;0 3 4 12      ;
+teste_0131.jpg  ;sim      ;nao      ;sim          ;sim        ;6 7 9 10      ;
+teste_0132.jpg  ;sim      ;nao      ;sim          ;sim        ;1 2 4 5 13    ;
+teste_0133.jpg  ;sim      ;nao      ;sim          ;sim        ;3 11 12       ;
+teste_0134.jpg  ;sim      ;nao      ;sim          ;sim        ;1 3 6 11 12   ;
+teste_0135.jpg  ;sim      ;nao      ;sim          ;sim        ;5 5 6 9       ;
+teste_0136.jpg  ;sim      ;nao      ;sim          ;sim        ;0 3 4 10      ;
+teste_0137.jpg  ;sim      ;nao      ;sim          ;sim        ;1 7 8 11      ;
+teste_0138.jpg  ;sim      ;nao      ;sim          ;sim        ;4 5 6         ;
+teste_0139.jpg  ;sim      ;nao      ;sim          ;sim        ;2 4 6         ;
+teste_0140.jpg  ;sim      ;nao      ;sim          ;sim        ;1 8 10 11     ;
+teste_0141.jpg  ;sim      ;sim      ;nao          ;sim        ;2 6 7 11 13   ;1 12
+teste_0142.jpg  ;sim      ;sim      ;nao          ;sim        ;1 4 6 8       ;0 3
+teste_0143.jpg  ;sim      ;sim      ;nao          ;sim        ;2 3 5 9 11 13 ;7 10
+teste_0144.jpg  ;sim      ;sim      ;nao          ;sim        ;1 4           ;6 11
+teste_0145.jpg  ;sim      ;sim      ;nao          ;sim        ;3 6           ;2 5
+teste_0146.jpg  ;sim      ;sim      ;nao          ;sim        ;4 7           ;6 13
+teste_0147.jpg  ;sim      ;sim      ;nao          ;sim        ;8 9           ;4 5
+teste_0148.jpg  ;sim      ;sim      ;nao          ;sim        ;1 6 11        ;4 13
+teste_0149.jpg  ;sim      ;sim      ;nao          ;sim        ;7 10          ;8 11
+teste_0150.jpg  ;sim      ;sim      ;nao          ;sim        ;5 6           ;9
+teste_0151.jpg  ;sim      ;sim      ;sim          ;sim        ;9 10 11       ;2 5
+teste_0152.jpg  ;sim      ;sim      ;sim          ;sim        ;1 7 8         ;4 11
+teste_0153.jpg  ;sim      ;sim      ;sim          ;sim        ;2 5 7 11      ;6 8
+teste_0154.jpg  ;sim      ;sim      ;sim          ;sim        ;3 6 9 12      ;10 13
+teste_0155.jpg  ;sim      ;sim      ;sim          ;sim        ;0 2 5 11      ;6 7
+teste_0156.jpg  ;sim      ;sim      ;sim          ;sim        ;4 7 8 11 13   ;5 9
+teste_0157.jpg  ;sim      ;sim      ;sim          ;sim        ;1 5 10        ;11 12
+teste_0158.jpg  ;sim      ;sim      ;sim          ;sim        ;3 6           ;0 13
+teste_0159.jpg  ;sim      ;sim      ;sim          ;sim        ;1 2 8         ;3 4
+teste_0160.jpg  ;sim      ;sim      ;sim          ;sim        ;9 10 13       ;1

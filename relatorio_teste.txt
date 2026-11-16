@@ -1,0 +1,119 @@
+RELATORIO DO TESTE - conferencia automatica do Instrumental de Apoio Pequenos Fragmentos
+Data: 16/11/2026 02:03
+Modelo: modelo_final.onnx | entrada 1024x1024 | provedor CPUExecutionProvider
+Limiar de confianca para contar: 0.5 | juntar caixas repetidas: nao
+Computador: AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD | 16 nucleos logicos | Windows 11
+Python 3.14.5 | onnxruntime 1.31.0 | OpenCV 5.0.0
+Fotos avaliadas: 160 | com rotulo de caixas: 160
+
+1) CONFORMIDADE DA CAIXA (todas as fotos; gabarito = planilha_teste.txt)
+   Veredito correto = o sistema disse CONFORME/NAO CONFORME igual ao gabarito.
+   Diagnostico correto = acertou a quantidade de TODAS as 14 classes e a presenca de desconhecido.
+   Veredito correto ............ 158/160 =  98.8%  (IC95% 95.6- 99.7%)
+   Diagnostico correto ......... 150/160 =  93.8%  (IC95% 88.9- 96.6%)
+   FALSO CONFORME .............. 0/140 =   0.0%  (IC95%  0.0-  2.7%)   <- caixa errada aprovada (erro critico)
+   Falso nao conforme .......... 2/20 =  10.0%  (IC95%  2.8- 30.1%)   <- caixa certa reprovada (retrabalho)
+
+2) POR GRUPO (diagnostico correto)
+   Sobreposicao  nao                diagnostico 80/80 = 100.0%  (IC95% 95.4-100.0%) | veredito 80/80
+   Sobreposicao  sim                diagnostico 70/80 =  87.5%  (IC95% 78.5- 93.1%) | veredito 78/80
+   Desconhecido  nao                diagnostico 74/80 =  92.5%  (IC95% 84.6- 96.5%) | veredito 78/80
+   Desconhecido  sim                diagnostico 76/80 =  95.0%  (IC95% 87.8- 98.0%) | veredito 80/80
+   Estado        com_mais           diagnostico 36/40 =  90.0%  (IC95% 76.9- 96.0%) | veredito 40/40
+   Estado        completa           diagnostico 37/40 =  92.5%  (IC95% 80.1- 97.4%) | veredito 38/40
+   Estado        faltando           diagnostico 39/39 = 100.0%  (IC95% 91.0-100.0%) | veredito 39/39
+   Estado        faltando_com_mais  diagnostico 38/41 =  92.7%  (IC95% 80.6- 97.5%) | veredito 41/41
+
+3) POR SITUACAO (16 situacoes)
+   situacao                                           n  veredito  diagnost.
+   completa                                          10    10/10      10/10 
+   completa + desconhecido                           10    10/10      10/10 
+   faltando                                           9     9/9        9/9  
+   faltando + desconhecido                           10    10/10      10/10 
+   com_mais                                          10    10/10      10/10 
+   com_mais + desconhecido                           10    10/10      10/10 
+   faltando_com_mais                                 11    11/11      11/11 
+   faltando_com_mais + desconhecido                  10    10/10      10/10 
+   completa + sobreposto                             10     8/10       8/10 
+   completa + desconhecido + sobreposto              10    10/10       9/10 
+   faltando + sobreposto                             10    10/10      10/10 
+   faltando + desconhecido + sobreposto              10    10/10      10/10 
+   com_mais + sobreposto                             10    10/10       7/10 
+   com_mais + desconhecido + sobreposto              10    10/10       9/10 
+   faltando_com_mais + sobreposto                    10    10/10       9/10 
+   faltando_com_mais + desconhecido + sobreposto     10    10/10       8/10 
+
+4) ERROS DE CONTAGEM POR CLASSE (numero de fotos; ordem de Pareto)
+   sub = contou MENOS que o real (peca nao vista) | super = contou MAIS (peca inventada ou classe trocada)
+    4 retrator_senn_mueller        sub   1 | super   1 | total   2 | acumulado  22.2%
+   13 retrator_farabeuf            sub   0 | super   1 | total   1 | acumulado  33.3%
+   12 descolador_williger          sub   0 | super   1 | total   1 | acumulado  44.4%
+   10 pinca_reducao_pontas_20cm    sub   1 | super   0 | total   1 | acumulado  55.6%
+    6 pinca_reducao_dentes_16cm    sub   0 | super   1 | total   1 | acumulado  66.7%
+    5 pinca_reducao_dentes_14cm    sub   1 | super   0 | total   1 | acumulado  77.8%
+    1 afastador_hohmann_8x236      sub   0 | super   1 | total   1 | acumulado  88.9%
+    0 gancho_pequeno               sub   0 | super   1 | total   1 | acumulado 100.0%
+   11 modelador_pequeno            sub   0 | super   0 | total   0 | acumulado 100.0%
+    9 retrator_weitlaner           sub   0 | super   0 | total   0 | acumulado 100.0%
+    8 pinca_reducao_pontas_152mm   sub   0 | super   0 | total   0 | acumulado 100.0%
+    7 pinca_verbrugge              sub   0 | super   0 | total   0 | acumulado 100.0%
+    3 afastador_mini_2x16          sub   0 | super   0 | total   0 | acumulado 100.0%
+    2 afastador_hohmann_mini_2x8   sub   0 | super   0 | total   0 | acumulado 100.0%
+
+5) INSTRUMENTO DESCONHECIDO
+   Fotos com desconhecido em que ele foi detectado .... 79/80 =  98.8%  (IC95% 93.3- 99.8%)
+   Fotos sem desconhecido com desconhecido falso ...... 1/80 =   1.2%  (IC95%  0.2-  6.7%)
+
+6) DETECCAO NAS 160 FOTOS COM CAIXAS (gabarito = .txt de rotulo)
+   Precisao (conf >= 0.5, IoU 0,5) .... 3002/3012 = 99.7%
+   Revocacao (conf >= 0.5, IoU 0,5) ... 3002/3007 = 99.8%
+   mAP50 ................................. 99.5%
+   mAP50-95 .............................. 96.4%
+   classe                            inst      P      R   AP50  AP50-95
+    0 gancho_pequeno                  157   99.4  100.0   99.5     94.1
+    1 afastador_hohmann_8x236         148   99.3  100.0   99.5     95.8
+    2 afastador_hohmann_mini_2x8      152  100.0  100.0   99.5     94.7
+    3 afastador_mini_2x16             151  100.0  100.0   99.5     95.7
+    4 retrator_senn_mueller           314   99.7   99.7   99.5     94.0
+    5 pinca_reducao_dentes_14cm       313  100.0   99.7   99.5     97.9
+    6 pinca_reducao_dentes_16cm       304   99.7  100.0   99.5     97.7
+    7 pinca_verbrugge                 149  100.0  100.0   99.5     97.4
+    8 pinca_reducao_pontas_152mm      154  100.0  100.0   99.5     97.2
+    9 retrator_weitlaner              151  100.0  100.0   99.5     99.0
+   10 pinca_reducao_pontas_20cm       151  100.0   99.3   99.5     98.9
+   11 modelador_pequeno               311  100.0  100.0   99.5     96.8
+   12 descolador_williger             162   99.4  100.0   99.3     94.7
+   13 retrator_farabeuf               310   99.7  100.0   99.5     95.5
+   14 instrumento_desconhecido         80   95.1   97.5   99.4     96.3
+
+   Matriz de confusao (linha = classe real, coluna = prevista; ND = nao detectado; FP = deteccao sem peca)
+         0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  ND
+      0  155   0   0   0   0   1   0   0   0   0   0   0   1   0   0   0
+      1    0 148   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+      2    0   0 152   0   0   0   0   0   0   0   0   0   0   0   0   0
+      3    0   0   0 151   0   0   0   0   0   0   0   0   0   0   0   0
+      4    0   0   0   0 313   0   0   0   0   0   0   0   0   0   0   1
+      5    1   0   0   0   0 311   0   0   0   0   0   0   0   0   1   0
+      6    0   0   0   0   0   0 303   0   0   0   0   0   0   0   1   0
+      7    0   0   0   0   0   0   0 149   0   0   0   0   0   0   0   0
+      8    0   0   0   0   0   0   0   0 154   0   0   0   0   0   0   0
+      9    0   0   0   0   0   0   0   0   0 151   0   0   0   0   0   0
+     10    0   0   0   0   0   0   0   0   0   0 150   0   0   0   0   1
+     11    0   0   0   0   0   0   0   0   0   0   0 311   0   0   0   0
+     12    0   0   0   0   0   0   0   0   0   0   0   0 162   0   0   0
+     13    0   0   0   0   0   0   0   0   0   0   0   0   0 310   0   0
+     14    0   0   0   0   0   0   0   0   0   0   0   0   0   0  78   2
+     FP    2   1   0   0   1   0   2   0   0   0   0   0   0   1   2   0
+   Trocas de classe mais frequentes:
+     1x  pinca_reducao_dentes_16cm -> detectado como instrumento_desconhecido
+     1x  pinca_reducao_dentes_14cm -> detectado como instrumento_desconhecido
+     1x  pinca_reducao_dentes_14cm -> detectado como gancho_pequeno
+     1x  gancho_pequeno -> detectado como descolador_williger
+     1x  gancho_pequeno -> detectado como pinca_reducao_dentes_14cm
+
+7) TEMPO POR FOTO (sem a primeira, de aquecimento)
+   Inferencia (pre + rede + pos) .. media 158 ms | desvio 7 ms | maximo 186 ms
+   Total (ler foto + inferencia + comparacao com o checklist) .. media 180 ms | maximo 210 ms
+   Criterio do artigo (< 5 s por imagem): ATENDIDO
+
+Arquivos: resultado_por_foto.txt | exemplos\ (1 foto por situacao) | erros\ (fotos com diagnostico errado)
