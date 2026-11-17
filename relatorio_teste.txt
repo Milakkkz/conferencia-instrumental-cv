@@ -1,5 +1,5 @@
-RELATORIO DO TESTE - conferencia automatica do Instrumental de Apoio Pequenos Fragmentos
-Data: 16/11/2026 02:03
+﻿RELATORIO DO TESTE - conferencia automatica do Instrumental de Apoio Pequenos Fragmentos
+Data: 16/11/2026 23:05
 Modelo: modelo_final.onnx | entrada 1024x1024 | provedor CPUExecutionProvider
 Limiar de confianca para contar: 0.5 | juntar caixas repetidas: nao
 Computador: AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD | 16 nucleos logicos | Windows 11
@@ -87,14 +87,15 @@ Fotos avaliadas: 160 | com rotulo de caixas: 160
    14 instrumento_desconhecido         80   95.1   97.5   99.4     96.3
 
    Matriz de confusao (linha = classe real, coluna = prevista; ND = nao detectado; FP = deteccao sem peca)
+   (casamento em duas etapas: primeiro mesma classe, depois o restante; a diagonal = acertos da precisao/revocacao)
          0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  ND
-      0  155   0   0   0   0   1   0   0   0   0   0   0   1   0   0   0
+      0  157   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
       1    0 148   0   0   0   0   0   0   0   0   0   0   0   0   0   0
       2    0   0 152   0   0   0   0   0   0   0   0   0   0   0   0   0
       3    0   0   0 151   0   0   0   0   0   0   0   0   0   0   0   0
       4    0   0   0   0 313   0   0   0   0   0   0   0   0   0   0   1
-      5    1   0   0   0   0 311   0   0   0   0   0   0   0   0   1   0
-      6    0   0   0   0   0   0 303   0   0   0   0   0   0   0   1   0
+      5    0   0   0   0   0 312   0   0   0   0   0   0   0   0   1   0
+      6    0   0   0   0   0   0 304   0   0   0   0   0   0   0   0   0
       7    0   0   0   0   0   0   0 149   0   0   0   0   0   0   0   0
       8    0   0   0   0   0   0   0   0 154   0   0   0   0   0   0   0
       9    0   0   0   0   0   0   0   0   0 151   0   0   0   0   0   0
@@ -103,17 +104,13 @@ Fotos avaliadas: 160 | com rotulo de caixas: 160
      12    0   0   0   0   0   0   0   0   0   0   0   0 162   0   0   0
      13    0   0   0   0   0   0   0   0   0   0   0   0   0 310   0   0
      14    0   0   0   0   0   0   0   0   0   0   0   0   0   0  78   2
-     FP    2   1   0   0   1   0   2   0   0   0   0   0   0   1   2   0
+     FP    1   1   0   0   1   0   1   0   0   0   0   0   1   1   3   0
    Trocas de classe mais frequentes:
-     1x  pinca_reducao_dentes_16cm -> detectado como instrumento_desconhecido
      1x  pinca_reducao_dentes_14cm -> detectado como instrumento_desconhecido
-     1x  pinca_reducao_dentes_14cm -> detectado como gancho_pequeno
-     1x  gancho_pequeno -> detectado como descolador_williger
-     1x  gancho_pequeno -> detectado como pinca_reducao_dentes_14cm
 
 7) TEMPO POR FOTO (sem a primeira, de aquecimento)
-   Inferencia (pre + rede + pos) .. media 158 ms | desvio 7 ms | maximo 186 ms
-   Total (ler foto + inferencia + comparacao com o checklist) .. media 180 ms | maximo 210 ms
+   Inferencia (pre + rede + pos) .. media 151 ms | desvio 8 ms | maximo 173 ms
+   Total (ler foto + inferencia + comparacao com o checklist) .. media 173 ms | maximo 200 ms
    Criterio do artigo (< 5 s por imagem): ATENDIDO
 
 Arquivos: resultado_por_foto.txt | exemplos\ (1 foto por situacao) | erros\ (fotos com diagnostico errado)
