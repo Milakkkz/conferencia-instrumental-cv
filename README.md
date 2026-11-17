@@ -62,14 +62,14 @@ com 2 unidades. Há também uma classe para instrumentos que não pertencem à c
 |---|---|---|
 | 1. Captura (treino) | `captura_treino.py` | Fotografa o conjunto com a câmera configurada: foco manual, parâmetros fixos do driver e realce de bordas. As fotos vão para `fotos_treino` na Área de Trabalho. |
 | 2. Anotação | `anotador.py` | Desenha as caixas e grava os rótulos no formato YOLO, um `.txt` por foto. |
-| 3. Pré-anotação | `detectar_onnx.py --pasta` | Gera caixas preliminares com um modelo já treinado, para depois corrigir no anotador. |
+| 3. Pré-anotação | `detectar_onnx.py modelo.onnx --pasta <pasta> --conf 0.4 --dedup 0.8` | Gera caixas preliminares com um modelo já treinado, para depois corrigir no anotador. |
 | 4. Auditoria | `conferir_rotulos.py` | Aponta classes inválidas, caixas duplicadas, tamanhos atípicos e contagens que não batem com o checklist. |
 | 5. Preparação | `preparar_fotos_treino.py` | Reduz as fotos para 1024×768, junta os rótulos e gera o zip para o Colab. |
 | 6. Treinamento | `treino_colab.ipynb` | Treina no Google Colab (GPU T4) e exporta para ONNX. |
 | 7. Captura (teste) | `captura_teste.py` | Fotografa o conjunto de teste e registra, em `planilha_teste.txt`, a situação e as peças faltantes e excedentes de cada foto. |
 | 8. Utilitário | `renumerar_fotos.py` | Renumera uma faixa de fotos de teste e ajusta a planilha. |
 | 9. Avaliação | `avaliar_teste.py` | Mede veredito, diagnóstico, falso conforme, precisão, revocação, mAP e tempo. |
-| Uso | `detectar_onnx.py --camera 0` | Detecção ao vivo na câmera. |
+| Uso | `detectar_onnx.py modelo_final.onnx --camera 0` | Detecção ao vivo na câmera (limiar 0,5, como na avaliação). |
 
 Os scripts rodam no PC (Windows) com Python, OpenCV, NumPy e ONNX Runtime:
 ```
@@ -88,7 +88,7 @@ confusão e parâmetros do treino estão em `results.png`, `results.csv`, `args.
 
 ## Dados e pesos
 
-As fotos (1.500 de treino e 160 de teste) não estão no repositório, por causa do tamanho. Os pesos
+As fotos (1.500 de treino e 160 de teste) não estão no repositório, por causa do tamanho. O modelo que gerou os resultados do TCC é o `modelo_final.onnx` da Release `v1.0` (exportado para ONNX com opset 18, saída 1 × 19 × 21.504 e NMS por classe com IoU 0,7 no `detectar_onnx.py`). Para conferir a integridade, o SHA-256 começa por `5671d25dfa26f640` (`modelo_final.onnx`) e por `1bbd60d3a63c7636` (`best.pt`). Os pesos
 (`modelo_final.onnx` e `best.pt`) ficam anexados na Release `v1.0`. A planilha de gabarito do teste está em
 `planilha_teste.txt`.
 

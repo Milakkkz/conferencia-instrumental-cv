@@ -1,15 +1,15 @@
-"""Roda o modelo YOLO exportado (best.onnx) no PC, SEM PyTorch (usa onnxruntime + OpenCV).
+"""Roda o modelo YOLO exportado (modelo_final.onnx) no PC, SEM PyTorch (usa onnxruntime + OpenCV).
 
 Instalacao (uma vez, no terminal do PyCharm):   pip install onnxruntime opencv-python numpy
 
 Usos:
   # pre-anotar uma pasta de fotos (grava img_XXXX.txt ao lado das fotos e nao sobrescreve os existentes)
-  python detectar_onnx.py best.onnx --pasta "C:\\...\\fotos_treino" [--conf 0.25]
+  python detectar_onnx.py modelo_final.onnx --pasta "C:\\...\\fotos_treino" [--conf 0.4 --dedup 0.8]
 
   # ver a deteccao ao vivo na camera (ESC sai)
-  python detectar_onnx.py best.onnx --camera 0 [--conf 0.4]
+  python detectar_onnx.py modelo_final.onnx --camera 0 [--conf 0.5]
 
-  # sem argumentos (botao Run): usa o best.onnx ao lado do script e abre a camera 0
+  # sem argumentos (botao Run): usa o modelo_final.onnx ao lado do script e abre a camera 0
 
 classes.txt: lido da mesma pasta do .onnx, se existir; senao usa classe_0, classe_1...
 """
@@ -190,19 +190,19 @@ def limitar(dets):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("modelo", nargs="?", default=None,
-                    help="caminho do best.onnx (padrao: best.onnx ao lado deste script)")
+                    help="caminho do modelo_final.onnx (padrao: modelo_final.onnx ao lado deste script)")
     ap.add_argument("--pasta"); ap.add_argument("--camera", type=int)
-    ap.add_argument("--conf", type=float, default=0.25)
+    ap.add_argument("--conf", type=float, default=0.5, help="limiar de confianca (0.5 = o mesmo usado na avaliacao do TCC)")
     ap.add_argument("--sobrescrever", action="store_true")
     ap.add_argument("--faixa", help="so fotos de A a B, ex.: 1355-1400 (use junto com --sobrescrever)")
     ap.add_argument("--limite", action="store_true", help="limita cada classe ao numero de unidades do kit")
-    ap.add_argument("--dedup", type=float, default=0.8, help="IoU para remover caixas repetidas na mesma peca (0 desliga)")
+    ap.add_argument("--dedup", type=float, default=0.0, help="IoU para remover caixas repetidas na mesma peca (0 = desligado, como na avaliacao do TCC; 0.8 ajuda na pre-anotacao)")
     a = ap.parse_args()
     if a.modelo is None:
-        a.modelo = os.path.join(os.path.dirname(os.path.abspath(__file__)), "best.onnx")
+        a.modelo = os.path.join(os.path.dirname(os.path.abspath(__file__)), "modelo_final.onnx")
     if not os.path.exists(a.modelo):
         print("ERRO: nao achei o modelo:", a.modelo)
-        print("Coloque o best.onnx na mesma pasta deste script, ou passe o caminho como argumento.")
+        print("Coloque o modelo_final.onnx na mesma pasta deste script, ou passe o caminho como argumento.")
         input("\nPressione Enter para fechar...")
         sys.exit(1)
     if not a.pasta and a.camera is None:

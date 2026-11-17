@@ -222,23 +222,30 @@ def metricas_deteccao(preds, gts, nc, conf_limiar):
 
 
 def confusao(preds, gts, nc, conf_limiar):
-    """Matriz [classe real][classe prevista] com casamento sem olhar a classe (IoU >= 0.5).
-    Ultima coluna = nao detectado; ultima linha = deteccao sem peca real (falso positivo)."""
+    """Matriz [classe real][classe prevista], IoU >= 0.5, em duas etapas:
+    1) casa primeiro deteccao e peca da MESMA classe (igual ao calculo de precisao/revocacao);
+    2) o que sobrar e casado sem olhar a classe -> troca de classe.
+    Ultima coluna = nao detectado (ND); ultima linha = deteccao sem peca real (FP).
+    Assim, uma peca certa encostada em outra nao vira 'troca' so porque a caixa da vizinha sobrepoe mais."""
     M = np.zeros((nc + 1, nc + 1), int)
     for f in gts:
         g = gts[f]
         p = sorted([x for x in preds.get(f, []) if x[1] >= conf_limiar], key=lambda t: -t[1])
-        usado_g = [False] * len(g)
-        I = iou_matriz([x[2:6] for x in p], [x[1:5] for x in g]) if p and g else None
+        I = iou_matriz([x[2:6] for x in p], [x[1:5] for x in g]) if p and g else np.zeros((len(p), len(g)))
+        usado_p, usado_g = [False] * len(p), [False] * len(g)
+        for mesma in (True, False):
+            for i, pi in enumerate(p):
+                if usado_p[i]:
+                    continue
+                j_m, v_m = -1, 0.5
+                for j in range(len(g)):
+                    if not usado_g[j] and (g[j][0] == pi[0]) == mesma and I[i, j] >= v_m:
+                        j_m, v_m = j, I[i, j]
+                if j_m >= 0:
+                    usado_p[i] = usado_g[j_m] = True
+                    M[g[j_m][0], pi[0]] += 1
         for i, pi in enumerate(p):
-            j_m, v_m = -1, 0.5
-            for j in range(len(g)):
-                if not usado_g[j] and I[i, j] >= v_m:
-                    j_m, v_m = j, I[i, j]
-            if j_m >= 0:
-                usado_g[j_m] = True
-                M[g[j_m][0], pi[0]] += 1
-            else:
+            if not usado_p[i]:
                 M[nc, pi[0]] += 1
         for j, gj in enumerate(g):
             if not usado_g[j]:
@@ -456,6 +463,7 @@ def main():
         M = confusao(preds_all, gts_all, nc, a.conf)
         add("")
         add("   Matriz de confusao (linha = classe real, coluna = prevista; ND = nao detectado; FP = deteccao sem peca)")
+        add("   (casamento em duas etapas: primeiro mesma classe, depois o restante; a diagonal = acertos da precisao/revocacao)")
         cab = "      " + "".join(f"{c:>4d}" for c in range(nc)) + "  ND"
         add(cab)
         for r in range(nc + 1):
